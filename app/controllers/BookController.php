@@ -65,7 +65,7 @@ class BookController extends \BaseController {
 	{
 			return 'This is a <b>GET</b> request to /book/'.$id.'/edit and triggers the <b>Edit</b> method on the <b>BookController</b>. <br/>'.
 				'When using resrouceful routing this will be set up autmoatically for you.<br/>'.
-				'Note: <i>This route would usually show a form to edit the book in the database with an id of:</i>'$id;
+				'Note: <i>This route would usually show a form to edit the book in the database with an id of:</i>'.$id;
 	}
 
 
@@ -77,9 +77,9 @@ class BookController extends \BaseController {
 	 */
 	public function update($id)
 	{
-		return 'This is a <b>POST</b> request to /book/'.$id.' and triggers the <b>Update</b> method on the <b>BookController</b>. <br/>'.
+		return 'This is a <b>PUT or PATCH</b> request to /book/'.$id.' and triggers the <b>Update</b> method on the <b>BookController</b>. <br/>'.
 				'When using resrouceful routing this will be set up autmoatically for you.<br/>'.
-				'Note: <i>This route would usually <b>post</b> the form to edit the book in the database with an id of:</i>'$id;
+				'Note: <i>This route would usually <b>post</b> the form to edit the book in the database with an id of:</i>'.$id;
 	}
 
 
@@ -93,7 +93,7 @@ class BookController extends \BaseController {
 	{
 		return 'This is a <b>DELETE</b> request to /book/'.$id.' and triggers the <b>Destroy</b> method on the <b>BookController</b>. <br/>'.
 				'When using resrouceful routing this will be set up autmoatically for you.<br/>'.
-				'Note: <i>This route would usually delete the record of the book in the database with an id of:</i>'$id;
+				'Note: <i>This route would usually delete the record of the book in the database with an id of:</i>'.$id;
 	}
 
 
